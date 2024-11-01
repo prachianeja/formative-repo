@@ -26,3 +26,9 @@ time <- calculate_time(cars)
  
  print(time_rounded)
 ```
+2. Next, I bind the transformed data to the cars set by adding a new column called time.
+
+```{r}
+cars <- cbind(cars, "time" = time_rounded)
+print(cars)
+```
